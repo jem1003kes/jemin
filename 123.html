@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અમારી પતંગ દુકાનનું મેનૂ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNVtQo5VslTCtJap9y7GvRe6pzqHm_r4iSQ&s');
+			background-size: cover; /* ઇમેજને સ્ક્રીન પર કવર કરવા માટે */
+            background-attachment: fixed; /* ઇમેજને ફિક્સ્ડ રાખવા માટે, સ્ક્રોલ ન થાય */
+            background-position: center; /* ઇમેજને સેન્ટરમાં રાખવા માટે */
+            background-repeat: no-repeat; /* ઇમેજને રિપીટ ન કરવા માટે */
+            margin: 0;
+            padding: 20px;
+        }
+		
+	  h1 {
+            text-align: center;
+            color: #333;
+            background-color: skyblue;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .menu-item {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCxlObxuXf3VEknTQC_WHAiPaFe8hjGIovLw&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center; /* બધો ટેક્સ્ટ સેન્ટરમાં એલાઇન */
+        }
+		.menu-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .menu-item h2 {
+            margin: 10px 0;
+            color: black;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            color: black;
+        }
+        .price {
+            font-weight: bold;
+            color: black;
+        }
+        /* મોબાઇલ માટે રેસ્પોન્સિવ */
+        @media (max-width: 768px) {
+            .menu-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+		 @media (max-width: 480px) {
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ખંભાતના સ્પેશ્યલ પતંગ</br></br>ROYAL BROTHE'S</h1>
+    
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="photoprint.jpeg">
+			<h2>ફોટો પ્રિન્ટ</h2>
+            <p>ફોટો પ્રિન્ટ વાળી રંગીન પતંગ, આકર્ષક ડિઝાઇન।</p>
+            <p class="price">₹35</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pattachil.jpeg">
+			<h2>પત્તા ચીલ</h2>
+            <p>પત્તા જેવી ચીલ પતંગ, ઉડાવવી સરળ અને મજબૂત।</p>
+            <p class="price">₹45</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="metal.jpeg">
+			<h2>34 મેટલ ચપટ</h2>
+            <p>મેટલ ચપટ વાળી 34 ઇંચની પતંગ, યુદ્ધ માટે બેસ્ટ।</p>
+            <p class="price">₹250</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="chant.jpeg" alt="ચંટ પતંગની ઇમેજ">
+            <h2>ચંટ</h2>
+            <p>ચંટ પતંગ, ટ્રેડિશનલ અને ફ્લેક્સિબલ ડિઝાઇન।</p>
+            <p class="price">₹60</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="rangila.jpeg" alt="રંગીલા પતંગની ઇમેજ">
+            <h2>રંગીલા</h2>
+            <p>રંગીલા પતંગ, બહુ રંગીન અને મજેદાર ઉડાવવા માટે।</p>
+            <p class="price">₹35</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="30pvc.jpeg" alt="30 પીવીસી પતંગની ઇમેજ">
+            <h2>30 પીવીસી</h2>
+            <p>પીવીસી મટીરિયલની 30 ઇંચની પતંગ, હલકી અને ટકાઉ।</p>
+            <p class="price">₹40</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="42photoprint.jpeg" alt="34 ફોટો પ્રિન્ટ પતંગની ઇમેજ">
+            <h2>34 ફોટો પ્રિન્ટ</h2>
+            <p>34 ઇંચની ફોટો પ્રિન્ટ પતંગ, કસ્ટમ ડિઝાઇન સાથે।</p>
+            <p class="price">₹80</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="lakhnavi.jpeg" alt="લખનવી પતંગની ઇમેજ">
+            <h2>લખનવી</h2>
+            <p>લખનૌ સ્ટાઇલની પતંગ, ટ્રેડિશનલ અને શાનદાર।</p>
+            <p class="price">₹70</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="plainchil.jpeg">
+			<h2>પ્લેન ચીલ</h2>
+            <p>સાદી ચીલ પતંગ, બેસિક અને સરળ ઉડાવવી।</p>
+            <p class="price">₹55</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="chandchil.jpeg">
+			<h2>ચંદ ચીલ</h2>
+            <p>ચંદ આકારની ચીલ પતંગ, ડેકોરેટિવ અને સુંદર।</p>
+            <p class="price">₹60</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="panjabi.jpeg" alt="34 પંજાબી પતંગની ઇમેજ">
+            <h2>34 પંજાબી</h2>
+            <p>પંજાબી સ્ટાઇલની 34 ઇંચની પતંગ, મજબૂત અને યુદ્ધ માટે।</p>
+            <p class="price">₹500</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="rajwadi.jpeg">
+			<h2>42 રાજવાડી</h2>
+            <p>રાજવાડી ડિઝાઇનની 42 ઇંચની પતંગ, રોયલ અને ટકાઉ।</p>
+            <p class="price">₹550</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="pantopi.jpeg" alt="30 પાન ટોપી ચીલ પતંગની ઇમેજ">
+            <h2>30 પાન ટોપી ચીલ</h2>
+            <p>પાન ટોપી જેવી 30 ઇંચની ચીલ પતંગ, યુનિક શેप।</p>
+            <p class="price">₹75</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="motichapat.jpeg">
+			<h2>34 ચંદ ચપટ</h2>
+            <p>ચંદ આકારની 34 ઇંચની ચપટ પતંગ, મજબૂત અને રંગીન।</p>
+            <p class="price">₹150</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="ranginchapat.jpeg">
+			<h2>30 કલર ચપટ</h2>
+            <p>રંગીન 30 ઇંચની ચપટ પતંગ, બાળકો માટે આદર્શ।</p>
+            <p class="price">₹120</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="eagle.jpeg" alt="ઈગલ પતંગની ઇમેજ">
+            <h2>ઈગલ</h2>
+            <p>ગરુડ જેવી ઈગલ પતંગ, ઊંચાઈ સુધી ઉડતી છે।</p>
+            <p class="price">₹350</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="rocket.jpeg">
+			<h2>રોકેટ</h2>
+            <p>રોકેટ આકારની પતંગ, એક્સાઇટિંગ અને ફાસ્ટ ઉડાવવી।</p>
+            <p class="price">₹50</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="chapat.jpeg" alt="ચંદ ચપટ પતંગની ઇમેજ">
+            <h2>ચંદ ચપટ</h2>
+            <p>ચંદ આકારની ચપટ પતંગ, સુંદર અને ટ્રેડિશનલ।</p>
+            <p class="price">₹120</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="plainbareli.jpeg">
+			<h2>પ્લેન બરેલી અર્ધિપા</h2>
+            <p>બરેલી સ્ટાઇલની સાદી અર્ધિપા પતંગ, મજબૂત।</p>
+            <p class="price">₹80</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="bareli12.jpeg" alt="મંજોલા પતંગની ઇમેજ">
+            <h2>મંજોલા</h2>
+            <p>મંજોલા પતંગ, ટ્રેડિશનલ ગુજરાતી ડિઝાઇન।</p>
+            <p class="price">₹70</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="bareli.jpeg" alt="બરેલી અર્ધિપા પતંગની ઇમેજ">
+            <h2>બરેલી અર્ધિપા</h2>
+            <p>બરેલી સ્ટાઇલની અર્ધિપા પતંગ, યુદ્ધ માટે બેસ્ટ।</p>
+            <p class="price">₹80</p>
+        </div>
+        
+        <div class="menu-item">
+            <img src="12.JPEG" alt="બરેલી અંગૂર પતંગની ઇમેજ">
+            <h2>બરેલી અંગૂર</h2>
+            <p>બરેલી સ્ટાઇલની અંગૂર પતંગ, રંગીન અને મજેદાર।</p>
+            <p class="price">₹60</p>
+        </div>
+    </div>
+</body>
+</html>
